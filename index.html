@@ -26,12 +26,10 @@
             flex-direction: column;
             align-items: center;
             
-
-           
         }
 
         #chartdiv{
-          width:70%;
+          width:800px;
           display: flex;
           justify-content: flex-start;
   
@@ -42,7 +40,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width:70%;
+            width:800px;
             color:rgb(27,1,76);
             font-weight: bold;
         }
@@ -62,7 +60,7 @@
         }
 
         #descdiv{
-          width:70%;
+          width:800px;
         }
 
 
@@ -82,11 +80,11 @@
 
             @media only screen and (max-width:1165px){
               #chartdiv{
-                width: 100%;
+                width: 800px;
               }
 
               #descdiv{
-                width:100%;
+                width:800px;
               }
 
             }
@@ -103,6 +101,14 @@
         }
 
         }
+
+        /* @media only screen and (max-width:704px)
+        {
+          #headerdiv h3{
+            font-size:7px;
+          }
+        } */
+
 
         @media only screen and (max-width:370px)
         {
@@ -125,7 +131,7 @@
           </div>
           <img SRC="platformable-logo-blue.png" width="210px">
       </div>
-      <div id="chartdiv"><canvas id="myChart" height="750" ></canvas></div>
+      <div id="chartdiv"><canvas id="myChart" width=800px height=450px ></canvas></div>
       <div id="descdiv"><p id="p"><span>Methodology:</span> Platformable tracks all banks globally and tallies those that have established an open API platform. We then review how many API products are made available by each bank and tally them according to category, and measure other API characteristics such as standards and specifications used, developer experience strategies employed, and business model/monetisation approaches. We review each bank at least once every three months.</p></div>
   </div>
    
@@ -204,7 +210,7 @@
                                         var data = dataset.data[index];
                                        
                                         
-                                        data > 0 ? ctx.fillText(data, bar._model.x + 20, bar._model.y - 1) : ''
+                                        data > 0 ? ctx.fillText(data, bar._model.x + 16, bar._model.y - 1) : ''
                                     });
                                 });
                             }
